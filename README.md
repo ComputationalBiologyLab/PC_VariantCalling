@@ -4,7 +4,7 @@ This repository contains codes used and supplementary files for the research art
 ## Directories
 # 1: Scripts
 **auto_script.sh**  
-```bash auto_script.sh input.txt```
+```bash auto_script.sh input.txt```  
 An automated bash script that run all the pipeline from raw data in FASTQ format to variants in VCF format.  
 
 
