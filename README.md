@@ -4,7 +4,10 @@ This repository contains codes used and supplementary files for the research art
 ## Directories
 # 1: Scripts
 **auto_script.sh**  
-```bash auto_script.sh input.txt```  
-An automated bash script that run all the pipeline from raw data in FASTQ format to variants in VCF format.  
+A bash script that autmoate the analysis pipeline starting from raw data in FASTQ format to reporting variants in VCF format.  
+Command: ```bash auto_script.sh input.txt```  
+**input.txt**  
+A tab-delimited txt file that the user can download and edit based on their input file names and reference. It has the following columns in order:  
+R1_fileName  R2_fileName  /directoryToReference/reference.fasta  indexedReference  prefixOfOutputFiles  VariantCaller(HC or DV)  DataType(DNA or RNA) 
 
 
