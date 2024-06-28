@@ -20,4 +20,7 @@ DataType (DNA or RNA)
 Script used to calculate coverage for each sample data type
 
 **VCF_intersection_script.sh and venn.py**  
-Scripts used to conclude intersecting variants across variant callers, data types, and both. ```venn.py``` was used to visualize these intersections in Venn diagrams.
+Scripts used to conclude intersecting variants across variant callers, data types, and both. ```venn.py``` was used to visualize these intersections in Venn diagrams.  
+
+## VCF_files  
+This directory contains the VCF files of common SNPs and INDELs across variant callers and data types. It also contains unique SNPs and INDELs according to the variant caller (HC: HaplotypeCaller, DV: DeepVariant)  
