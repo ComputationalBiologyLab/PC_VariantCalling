@@ -1,0 +1,43 @@
+# Calculate coverage for each BAM file, below is an example on one sample
+bedtools genomecov -ibam SRR10720410.RGG.sorted.marked.bam -bg > SRR10720410.bedgraph
+
+awk '{count+=$4} END{print count/NR}' SRR10720410.bedgraph
+awk 'BEGIN{min=1000000;max=0;sum=0}{if($4<min)min=$4; if($4>max)max=$4; sum+=$4} END{print "Minimum coverage:",min;print "Maximum coverage:",max;print "Average coverage:",sum/NR}' SRR10720410.bedgraph
+
+# Draw boxplot for the results.
+import matplotlib.pyplot as plt
+from google.colab import files
+
+
+Coverage_score_WES = [31.0572, 39.4304, 43.4632, 29.1862, 41.1096, 41.1323]
+Coverage_score_RNA_seq = [151.699, 175.946, 113.48, 132.968, 195.147, 277.444]
+
+# Box plot - Deep Variant
+RNA_data = [Coverage_score_WES, Coverage_score_RNA_seq]
+dv_labels = ['WES', 'RNA-seq']  # Updated labels
+
+plt.figure(figsize=(12, 12))
+
+plt.subplot(2, 2, 1)
+box_plot = plt.boxplot(RNA_data, labels=dv_labels, patch_artist=True)  # Removed [0] from RNA_data #Nehal: Which zeros?
+
+# Set colors for each box
+colors = ['#19aff8', '#fe5757']
+for box, color in zip(box_plot['boxes'], colors):
+    box.set(facecolor=color)
+
+plt.title('Coverage analysis')
+plt.ylabel('Coverage score')
+plt.ylim(25, 300)  # Set y-axis limits
+plt.xticks(rotation=45)
+plt.grid(False)
+
+
+plt.tight_layout()
+
+# Save the image to the Colab workspace
+plt.savefig('Coverage_Results.png')
+
+# Download the saved image
+files.download('Coverage_Results.png')
+plt.show()
