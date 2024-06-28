@@ -1,6 +1,6 @@
 #! /usr/bin/bash
 #Check if packages found or not if not install it 
-# To run the following script --> bash 'auto_script.sh' input.txt
+# To run the following script --> bash auto_script.sh input.txt
 Packages=("bwa" "fastp" "samtools" "openjdk-8-jdk" "hisat2" "bcftools")
 for pkg in "${Packages[@]}"; do
 	if dpkg -s $pkg &> /dev/null
