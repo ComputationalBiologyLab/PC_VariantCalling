@@ -1,0 +1,2 @@
+SRR10720231_1.fastq.gz	SRR10720231_2.fastq.gz	/home/bio/Desktop/variant_calling_benchmarking/Ref_Processed_files/resources_broad_hg38_v0_Homo_sapiens_assembly38.fasta	genome.6	SRR10720231	HC	RNA
+SRR10720410_1.fastq.gz	SRR10720410_2.fastq.gz	/home/bio/Desktop/variant_calling_benchmarking/Ref_Processed_files/resources_broad_hg38_v0_Homo_sapiens_assembly38.fasta	bwa_index_ref	SRR10720410	HC	DNA
