@@ -1,4 +1,4 @@
-# SNPs and INDELs variant calling by integrating HaplotypeCaller and DeepVariant using matched WES and RNA-Seq data
+# SNVs and INDELs variant calling by integrating HaplotypeCaller and DeepVariant using matched WES and RNA-Seq data
 This repository contains codes and supplementary files of the research article: Computational Integration of HaplotypeCaller and DeepVariant Reveals Novel Consensus Germline Variants across Matched WES and RNA-Seq Pulmonary Carcinoid Samples
 
 # Directories
@@ -23,7 +23,7 @@ Script used to calculate coverage for each sample data type.
 Scripts used to conclude intersecting variants across variant callers, data types, and both. ```venn.py``` was used to visualize these intersections in Venn diagrams.  
 
 ## VCF_files  
-This directory contains the VCF files of common SNPs and INDELs across variant callers and data types. It also contains unique SNPs and INDELs according to the variant caller (HC: HaplotypeCaller, DV: DeepVariant)  
+This directory contains the VCF files of common SNVs and INDELs across variant callers and data types. It also contains unique SNVs and INDELs according to the variant caller (HC: HaplotypeCaller, DV: DeepVariant)  
 
 ## Raw_VEP_Output  
 This directory contains the raw VEP output files in txt format resulted from running VEP on VCF found in VCF_files directory. No variants filtration was done at this stage. Information on a particular variant included mutliple metadata, such as Uploaded_variation	Location	Allele	Consequence	IMPACT	SYMBOL	Gene	Feature_type	Feature	BIOTYPE	EXON	INTRON	HGVSc	HGVSp	cDNA_position	CDS_position	Protein_position	Amino_acids	Codons	Existing_variation	REF_ALLELE	UPLOADED_ALLELE	DISTANCE, etc.   
