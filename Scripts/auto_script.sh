@@ -148,7 +148,7 @@ if [ "$datatype" == "DNA" ]; then
 }
 
 HaplotypeCaller_Tumor_DNA(){
-gatk --java-options '-Xmx16G' HaplotypeCaller \
+gatk --java-options '-Xmx8G' HaplotypeCaller \
 -R $Reference_File \
 -I $Ref/$ID.RGG.sorted.marked.bam \
 -O $cwd/Call_Variant_Files/"HAPLO$ID.vcf"
@@ -156,7 +156,7 @@ gzip -c $cwd/Call_Variant_Files/"HAPLO$ID.vcf" > $cwd/Call_Variant_Files/"HAPLO$
 }
 
 HaplotypeCaller_Tumor_RNA(){
-gatk --java-options '-Xmx16G' HaplotypeCaller \
+gatk --java-options '-Xmx8G' HaplotypeCaller \
 -R $Reference_File \
 -I $Ref/$ID.RGG.sorted.marked.bam \
 -O $cwd/Call_Variant_Files/"HAPLO$ID.vcf"
