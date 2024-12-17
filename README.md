@@ -1,4 +1,4 @@
-# SNVs and INDELs variant calling using matched WES and RNA-Seq data and integrating HaplotypeCaller and DeepVariant 
+# HaplotypeCaller and DeepVariant results integration to call SNVs and INDELs using matched WES and RNA-Seq data
 This repository contains codes and supplementary files of the research article: Computational Integration of HaplotypeCaller and DeepVariant Reveals Novel Consensus Germline Variants across Matched WES and RNA-Seq Pulmonary Carcinoid Samples
 
 # Directories
