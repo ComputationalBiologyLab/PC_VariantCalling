@@ -4,9 +4,9 @@ This repository provides codes and supplementary files of the research article: 
 ## Scripts
 **VC_fullscript.sh**  
 A bash script that automates the variant calling analysis pipeline starting from raw data in FASTQ format to reporting variants in VCF format. It is preferred that the script file, input.txt file, and FASTQ files to be located in the same directory.
-Command: ```VC_fullscript.sh input.txt```  
+Command: ```VC_fullscript.sh Input.txt```  
 
-**input.txt**  
+**Input.txt**  
 A tab-delimited txt file that the user can download and edit based on their input file names and reference. It has the following columns in order:  
 R1_fileName  
 R2_fileName  
@@ -16,10 +16,10 @@ prefixOfOutputFiles
 VariantCaller (HC or DV)  
 DataType (DNA or RNA) 
 
-**coverage_script.txt**  
+**Coverage_Script.txt**  
 Script used to calculate coverage for each sample data type.
 
-**VCF_intersection_script.sh and venn.py**  
+**VCF_intersection_Script.sh and Venn.py**  
 Scripts used to conclude intersecting variants across variant callers, data types, and both. ```venn.py``` was used to visualize these intersections in Venn diagrams.  
 
 ## VCF_files  
