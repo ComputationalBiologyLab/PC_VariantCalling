@@ -5,6 +5,7 @@ This repository provides codes and supplementary files of the research article: 
 **VC_fullscript.sh**  
 A bash script that automates the variant calling analysis pipeline starting from raw data in FASTQ format to reporting variants in VCF format. It is preferred that the script file, input.txt file, and FASTQ files to be located in the same directory.
 Command: ```VC_fullscript.sh input.txt```  
+
 **input.txt**  
 A tab-delimited txt file that the user can download and edit based on their input file names and reference. It has the following columns in order:  
 R1_fileName  
