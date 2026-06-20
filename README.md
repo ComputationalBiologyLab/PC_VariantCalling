@@ -1,11 +1,10 @@
-# HaplotypeCaller and DeepVariant results integration to call SNVs and INDELs using matched WES and RNA-Seq data
-This repository contains codes and supplementary files of the research article: Computational Integration of HaplotypeCaller and DeepVariant Reveals Novel Consensus Germline Variants across Matched WES and RNA-Seq Pulmonary Carcinoid Samples
-
+# Germline Variant Calling from WES and RNA-Seq data by DeepVariant and HaplotypeCaller: A case study in Pulmonary Carcinoids
+This repository provides codes and supplementary files of the research article: Consensus Germline Variants in Pulmonary Carcinoids: Candidate Drivers and Therapeutic Biomarkers
 # Directories
 ## Scripts
-**auto_script.sh**  
+**VC_fullscript.sh**  
 A bash script that automates the variant calling analysis pipeline starting from raw data in FASTQ format to reporting variants in VCF format. It is preferred that the script file, input.txt file, and FASTQ files to be located in the same directory.
-Command: ```bash auto_script.sh input.txt```  
+Command: ```VC_fullscript.sh input.txt```  
 **input.txt**  
 A tab-delimited txt file that the user can download and edit based on their input file names and reference. It has the following columns in order:  
 R1_fileName  
