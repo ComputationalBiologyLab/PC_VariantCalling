@@ -1,4 +1,4 @@
-# Germline Variant Calling from WES and RNA-Seq data by DeepVariant and HaplotypeCaller: A case study in Pulmonary Carcinoids
+# Germline Variant Calling from WES and RNA-Seq data by DeepVariant and HaplotypeCaller: A Pulmonary Carcinoid Case Study
 This repository provides codes and supplementary files of the research article: Consensus Germline Variants in Pulmonary Carcinoids: Candidate Drivers and Therapeutic Biomarkers
 # Directories
 ## Scripts
